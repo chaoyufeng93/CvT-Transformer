@@ -111,7 +111,7 @@ class Cov_Trans_Block(torch.nn.Module):
     q, k, v = rearrange(q, 'b h w c -> b (h w) c'), rearrange(k, 'b h w c -> b (h w) c'), rearrange(v, 'b h w c -> b (h w) c')
     if self.is_final == True:
       q, k, v = torch.cat([cls, q], dim = 1),torch.cat([cls, k], dim = 1),torch.cat([cls, v], dim = 1)
-    out = self.MHSA(q, k.permute(0,2,1), v)
+    out = self.MHSA(q, k, v)
     out += res
     out = self.FF(out)
     return out
