@@ -123,7 +123,7 @@ class CvTransformer(torch.nn.Module):
                emb_dim_list = [64, 192, 384],
                k_size = [7, 3, 3], 
                stride = [4, 2, 2], 
-               padding = [2,0,0],
+               padding = [2,1,1],
                multi_head = [1,3,6], 
                dim_expan = 4, 
                dropout = 0, 
