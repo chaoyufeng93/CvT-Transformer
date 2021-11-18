@@ -8,4 +8,4 @@ epoch: 300
 
 dropout: 0.3
 
-test acc:
+test acc: comming soon
