@@ -1,4 +1,4 @@
-This model is learning from scratch. The hyper-parameter is as same as CvT-13
+This model is learning from scratch. The parameter setting is as same as CvT-13
 
 the image is resized as 80 * 80
 
